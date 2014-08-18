@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_number"
+        android:singleLine="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:ems="10" >
+    </EditText>
+    <ImageButton 
+        android:id="@+id/ib_down_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/et_number"
+        android:layout_alignRight="@id/et_number"
+        android:layout_alignBottom="@id/et_number"
+        android:layout_marginRight="5dip"
+        android:src="@drawable/down_arrow"
+        
+        />
+
+</RelativeLayout>
