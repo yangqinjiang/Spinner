@@ -44,21 +44,21 @@ public class MainActivity extends Activity implements OnClickListener ,OnItemCli
 	}
 
 	/**
-	 * µ¯³öºÅÂëÑ¡Ôñ¿ò
+	 * å¼¹å‡ºå·ç é€‰æ‹©æ¡†
 	 */
 	private void showNumberDialog() {
 
 		prepareData();
 		ListView lv = new ListView(this);
 		lv.setBackgroundResource(R.drawable.listview_background);
-		lv.setVerticalScrollBarEnabled(false);//È¥µô¹ö¶¯Ìõ
+		lv.setVerticalScrollBarEnabled(false);//å»æ‰æ»šåŠ¨æ¡
 		lv.setDivider(null);
 		lv.setDividerHeight(0);
 		mAdapter = new NumbersAdapter();
 		lv.setAdapter(mAdapter);
 		lv.setOnItemClickListener(this);
 		popup = new PopupWindow(lv, et_number.getWidth()-4, 200);
-		// ×éºÏÊ¹ÓÃ
+		// ç»„åˆä½¿ç”¨
 		popup.setOutsideTouchable(true);
 		popup.setFocusable(true);
 		popup.setBackgroundDrawable(new BitmapDrawable());
@@ -66,7 +66,7 @@ public class MainActivity extends Activity implements OnClickListener ,OnItemCli
 	}
 
 	/**
-	 * ×¼±¸Êı¾İ
+	 * å‡†å¤‡æ•°æ®
 	 */
 	private void prepareData() {
 		numberList = new ArrayList<String>();
